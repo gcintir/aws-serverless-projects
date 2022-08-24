@@ -1,0 +1,91 @@
+{
+	"resource": "/generate-unique-id",
+	"path": "/generate-unique-id",
+	"httpMethod": "GET",
+	"headers": {
+		"Accept": "*/*",
+		"Accept-Encoding": "gzip, deflate, br",
+		"Host": "",
+		"Postman-Token": "",
+		"User-Agent": "",
+		"X-Amzn-Trace-Id": "",
+		"X-Forwarded-For": "",
+		"X-Forwarded-Port": "443",
+		"X-Forwarded-Proto": "https"
+	},
+	"multiValueHeaders": {
+		"Accept": [
+			"*/*"
+		],
+		"Accept-Encoding": [
+			"gzip, deflate, br"
+		],
+		"Host": [
+			""
+		],
+		"Postman-Token": [
+			""
+		],
+		"User-Agent": [
+			""
+		],
+		"X-Amzn-Trace-Id": [
+			""
+		],
+		"X-Forwarded-For": [
+			""
+		],
+		"X-Forwarded-Port": [
+			"443"
+		],
+		"X-Forwarded-Proto": [
+			"https"
+		]
+	},
+	"queryStringParameters": {
+		"size": "6",
+		"type": "ONLY_NUMBERS"
+	},
+	"multiValueQueryStringParameters": {
+		"size": [
+			"8"
+		],
+		"type": [
+			"ONLY_NUMBERS"
+		]
+	},
+	"pathParameters": null,
+	"stageVariables": null,
+	"requestContext": {
+		"resourceId": "",
+		"resourcePath": "/generate-unique-id",
+		"httpMethod": "GET",
+		"extendedRequestId": "",
+		"requestTime": "",
+		"path": "/dev/generate-unique-id",
+		"accountId": "",
+		"protocol": "HTTP/1.1",
+		"stage": "dev",
+		"domainPrefix": "",
+		"requestTimeEpoch": ,
+		"requestId": "",
+		"identity": {
+			"cognitoIdentityPoolId": null,
+			"accountId": null,
+			"cognitoIdentityId": null,
+			"caller": null,
+			"sourceIp": "",
+			"principalOrgId": null,
+			"accessKey": null,
+			"cognitoAuthenticationType": null,
+			"cognitoAuthenticationProvider": null,
+			"userArn": null,
+			"userAgent": "",
+			"user": null
+		},
+		"domainName": "",
+		"apiId": ""
+	},
+	"body": null,
+	"isBase64Encoded": false
+}
