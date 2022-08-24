@@ -1,5 +1,5 @@
 # unique id generator lambda
-This lambda function receives requests from API Gateway and it return identifier value depending on incoming type and size query parameters
+This lambda function receives requests from API Gateway and it returns unique id value depending on incoming type and size query parameters
 
 # High Level Architecture
 ![My Image](High_Level_Architecture.png)

@@ -88,3 +88,27 @@ const lambda = async (event) => {
 }
 
 exports.lambda = lambda;
+
+/*
+        const res = await new Promise((resolve, reject) => {
+            http.get(
+              "http://localhost:2772/applications/aws-serverless-projects/environments/dev/configurations/dev-uniqueIdGenerator", 
+              resolve
+            );
+          });
+          
+          let configData = await new Promise((resolve, reject) => {
+            let data = '';
+            res.on('data', chunk => data += chunk);
+            res.on('error', err => reject(err));
+            res.on('end', () => resolve(data));
+          });
+
+          const parsedConfigData = JSON.parse(configData);
+
+          const response = {
+            statusCode: 200,
+            body: parsedConfigData,
+          };
+          return response;
+        */
