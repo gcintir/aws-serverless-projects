@@ -27,7 +27,7 @@ aws lambda update-function-code --function-name unique-id-generator-lambda --zip
 
 ## invoke code
 ```
-aws lambda invoke --function-name unique-id-generator-lambda --cli-binary-format raw-in-base64-out --payload file://resources/aws.input.json response.json
+aws lambda invoke --function-name unique-id-generator-lambda --invocation-type Event --cli-binary-format raw-in-base64-out --payload file://resources/aws.input.json response.json
 
  ```
 

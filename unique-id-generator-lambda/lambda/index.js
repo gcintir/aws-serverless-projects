@@ -54,6 +54,11 @@ function generateUniqueId (uniqueIdType, uniqueIdSize) {
   return uniqueId;
 }
 
+function sleep (ms) {
+  console.log('sleep for ' + ms + ' ms');
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 const lambda = async (event) => {
   const response = {
     statusCode: 200,
