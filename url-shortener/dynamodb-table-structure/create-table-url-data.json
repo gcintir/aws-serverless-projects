@@ -1,0 +1,49 @@
+{
+	"TableName": "url_data",
+	"KeySchema":
+	[
+		{
+			"AttributeName": "orig_url",
+			"KeyType": "HASH"
+		}
+	],
+	"GlobalSecondaryIndexes":
+	[
+		{
+			"IndexName": "shortened-url-index",
+			"KeySchema":
+			[
+				{
+					"AttributeName": "shortened_url",
+					"KeyType": "HASH"
+				}
+			],
+			"Projection": 
+			{
+			"ProjectionType": "ALL"
+        	},
+			"ProvisionedThroughput": 
+			{
+				"WriteCapacityUnits": 1, 
+				"ReadCapacityUnits": 1
+			} 
+		}
+	],
+	"AttributeDefinitions":
+	[
+		{
+			"AttributeName": "orig_url",
+			"AttributeType": "S"
+		},
+		{
+			"AttributeName": "shortened_url",
+			"AttributeType": "S"
+		}
+	],
+	"TableClass": "STANDARD",
+	"ProvisionedThroughput": 
+	{
+		"WriteCapacityUnits": 1, 
+		"ReadCapacityUnits": 1
+	}
+}

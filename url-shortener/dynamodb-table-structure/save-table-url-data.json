@@ -1,0 +1,9 @@
+{
+    "TableName": "url_data",
+    "Item": {
+        "orig_url": {"S": "abc123456"},
+        "shortened_url": {"S": "xyz"},
+		"url_code": {"S": "xyz"},
+		"timestamp": {"N": "12345"}
+    }
+}
