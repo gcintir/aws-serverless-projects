@@ -1,0 +1,58 @@
+
+{
+	"TableName": "reminder_data",
+	"KeySchema":
+	[
+		{
+			"AttributeName": "id",
+			"KeyType": "HASH"
+		}
+	],
+	"GlobalSecondaryIndexes":
+	[
+		{
+			"IndexName": "user-id-index",
+			"KeySchema":
+			[
+				{
+					"AttributeName": "user_id",
+					"KeyType": "HASH"
+				},
+                {
+					"AttributeName": "expiry_date",
+					"KeyType": "RANGE"
+				}
+			],
+			"Projection": 
+			{
+			"ProjectionType": "ALL"
+        	},
+			"ProvisionedThroughput": 
+			{
+				"WriteCapacityUnits": 1, 
+				"ReadCapacityUnits": 1
+			} 
+		}
+	],
+	"AttributeDefinitions":
+	[
+		{
+			"AttributeName": "id",
+			"AttributeType": "S"
+		},
+		{
+			"AttributeName": "user_id",
+			"AttributeType": "S"
+		},
+        {
+			"AttributeName": "expiry_date",
+			"AttributeType": "N"
+		}
+	],
+	"TableClass": "STANDARD",
+	"ProvisionedThroughput": 
+	{
+		"WriteCapacityUnits": 1, 
+		"ReadCapacityUnits": 1
+	}
+}

@@ -1,7 +1,6 @@
 {
-    "id": 0,
-    "userId": "",
-    "expiryDate": "",
-    "notificationType": "",
-    "message": ""
+    "userId": "1",
+    "expiryDate": "2022-10-04T13:20:00Z",
+    "notificationType": "SMS",
+    "message": "reminder_message5"
 }
