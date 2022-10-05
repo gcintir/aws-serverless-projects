@@ -74,9 +74,11 @@ aws lambda invoke --function-name send-reminder-lambda --invocation-type Event -
 
  ```
 
- ## create dynamodb structure
+ ## create and delete dynamodb structure
 
 ```
  aws dynamodb create-table --cli-input-json file://resources/create-table-reminder-data.json
  ```
-
+ ```
+aws dynamodb delete-table --table-name reminder_data
+```

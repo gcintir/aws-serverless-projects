@@ -1,6 +1,7 @@
 {
   "Variables": {
     "AWS_REGION" : "us-east-1",
-    "DYNAMODB_TABLE_NAME": "reminder_data"
+    "DYNAMODB_TABLE_NAME": "reminder_data",
+    "AWS_PROFILE": "gcintir_user"
   }
 }

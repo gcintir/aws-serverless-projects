@@ -10,12 +10,14 @@ const MINIMUM_EXPIRY_DATE_DIFF_IN_SECONDS = 5 * 60;
 async function saveReminderData (reminderData) {
    const {userId, expiryDate, notificationType, message} = reminderData;
    const timestamp = Date.now();
+   const ttl_date = expiryDate / 1000;
    const params = {
       TableName: TABLE_NAME,
       Item: {
         id: { S: `${uuidv4()}`}, 
         user_id: { S: `${userId}`},
         expiry_date: { N: `${expiryDate}`},
+        ttl : { N: `${ttl_date}`},
         notification_type: { S: `${notificationType}`},
         message: { S: `${message}`},
         creation_date: {N: `${timestamp}`}
