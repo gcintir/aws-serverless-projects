@@ -1,5 +1,5 @@
 # extensions lambda
-This lambda function is an example on how to Lambda extensions
+This lambda function is an example on how to retrieve application secret and application configuration by using lambda extensions
 
 # Install & Test & Zip:
 
